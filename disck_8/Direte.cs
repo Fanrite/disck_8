@@ -63,5 +63,40 @@ namespace Direte
             else return 0;
         }
 
+        
+
+    }
+
+    class Bag
+    {
+        public static int InverLuk(int x, int k)
+        {
+            int b;
+            b = k - 1 - x;
+            return b;
+        }
+
+        public static int ModulP(int x, int y, int k)
+        {
+            int b;
+            b = k - x + y % k;
+            return b;
+        }
+
+        public static int ModulM(int x, int y, int k)
+        {
+            int b;
+            b = k - x * y % k;
+            return b;
+        }
+
+        public static int ShtrShef(int x, int y, int k)
+        {
+            int b;
+            b = Math.Max(x, y) + 1 % k;
+            return b;
+        }
+
+
     }
 }
